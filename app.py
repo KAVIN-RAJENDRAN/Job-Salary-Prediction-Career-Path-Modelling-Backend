@@ -116,7 +116,5 @@ if __name__ == "__main__":
     print("Starting backend server...")
     app.run(host="0.0.0.0", port=5000, debug=True)
 
-git add app.py
-git commit -m "fix model and data paths for render"
-git push
+
 
