@@ -4,9 +4,9 @@ from flask import Flask, request, jsonify
 from flask_cors import CORS
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-DATA_PATH = os.path.join(BASE_DIR, "data", "ds_salaries.csv")
-REG_MODEL_PATH = os.path.join(BASE_DIR, "model", "regression_model.pkl")
-CLF_MODEL_PATH = os.path.join(BASE_DIR, "model", "classification_model.pkl")
+DATA_PATH = os.path.join(BASE_DIR, "ds_salaries.csv")
+REG_MODEL_PATH = os.path.join(BASE_DIR, "regression_model.pkl")
+CLF_MODEL_PATH = os.path.join(BASE_DIR, "classification_model.pkl")
 
 app = Flask(__name__)
 CORS(app)
@@ -115,3 +115,4 @@ def career_path():
 if __name__ == "__main__":
     print("Starting backend server...")
     app.run(host="0.0.0.0", port=5000, debug=True)
+
